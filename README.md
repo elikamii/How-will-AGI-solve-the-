@@ -1,2 +1,12 @@
-# How-will-AGI-solve-the-
-seconds as input and counts down to zero. It demonstrates the use of the time module and how to create a basic CLI-based time management tool."
+import time
+
+def countdown(seconds):
+    while seconds > 0:
+        print(f"Time remaining: {seconds} seconds")
+        time.sleep(1)
+        seconds -= 1
+    
+    print("⏲️ Time's up!")
+
+# Start a 10-second timer
+countdown(10)
